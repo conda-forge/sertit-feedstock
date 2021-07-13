@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: faffda0fbc8104edc0028c0d92fad01a9c6a5aaafec8f1cd78ce7a0b240a4081
+  sha256: 177a66a6faa05d63d2fcffc9a1cb9f915377e712e5ee59562a4f297d0a5e04c3
 
 build:
   number: 0
