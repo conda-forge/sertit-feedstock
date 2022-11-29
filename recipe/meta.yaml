@@ -8,8 +8,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: 6bc214c4d22343048a9ea023dde8e560906ccb11d89cdf51036af7d40a750a5d
-
+  sha256: 48547198498028dc987699680dce75e04b633f0abd1c6a2f511482d5cd47139f
+  
 build:
   number: 0
   noarch: python
