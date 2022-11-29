@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.19.2" %}
+{% set version = "1.19.3" %}
 
 
 package:
@@ -18,18 +18,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - dill
     - lxml
     - psutil
-    - python >=3.7
+    - python >=3.8
     - tqdm
     - cloudpathlib
-    - rasterio >=1.2.2
+    - rasterio >=1.3.0
     - xarray >=0.18.0
     - rioxarray >=0.4.0
-    - geopandas >=0.9.0
+    - geopandas >=0.11.0
 
 test:
   imports:
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   description: SERTIT python library for generic tools
-  doc_url: https://sertit.github.io/sertit-utils/
+  doc_url: https://sertit-utils.readthedocs.io/en/latest/index.html
   dev_url: http://github.com/sertit/sertit-utils
 
 extra:
