@@ -11,7 +11,7 @@ source:
   sha256: a13824a3b17c076e8e5f6c2e376f8a7b7a49145c73871c9c0496cf2df9039237
   
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   description: SERTIT python library for generic tools
-  doc_url: https://sertit-utils.readthedocs.io/en/latest/index.html
+  doc_url: https://sertit-utils.readthedocs.io/en/latest
   dev_url: http://github.com/sertit/sertit-utils
 
 extra:
