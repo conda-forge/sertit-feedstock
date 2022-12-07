@@ -41,10 +41,10 @@ test:
 
 about:
   home: http://github.com/sertit/sertit-utils
-  summary: SERTIT python library for generic tools
+  summary: SERTIT python library for generic tools.
   license: Apache-2.0
   license_file: LICENSE
-  description: SERTIT python library for generic tools
+  description: SERTIT python library for generic tools.
   doc_url: https://sertit-utils.readthedocs.io/en/latest
   dev_url: http://github.com/sertit/sertit-utils
 
