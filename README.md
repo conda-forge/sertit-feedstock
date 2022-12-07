@@ -7,13 +7,13 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sertit-feedstock/blob/main/LICENSE.txt)
 
-Summary: SERTIT python library for generic tools
+Summary: SERTIT python library for generic tools.
 
 Development: http://github.com/sertit/sertit-utils
 
-Documentation: https://sertit.github.io/sertit-utils/
+Documentation: https://sertit-utils.readthedocs.io/en/latest
 
-SERTIT python library for generic tools
+SERTIT python library for generic tools.
 
 Current build status
 ====================
