@@ -11,25 +11,27 @@ source:
   sha256: 55d7bc774f385afd3f97b6879152a42e55741de76dede8c8f8b83e09e67d03c7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
   run:
     - dill
     - lxml
     - psutil
-    - python >=3.8
+    - python >=3.9
     - tqdm
-    - cloudpathlib
+    - cloudpathlib-all >=0.10.0
     - rasterio >=1.3.0
     - xarray >=0.18.0
     - rioxarray >=0.4.0
     - geopandas >=0.11.0
+    - dask >=2021.10.0
+    - shapely >=2.0.0
 
 test:
   imports:
