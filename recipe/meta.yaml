@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.42.1" %}
+{% set version = "1.42.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: eefc22aef3cb383ab60713a877b89fd79f95759da97778b7dbcdf348dfca72d0
+  sha256: 19bdf99c28308fbd8207da29dd6548bef5cfe40c4472ce62ff4ec0f4e49d0cf1
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - rasterio >=1.3.10
     - xarray >=2024.06.0
     - rioxarray >=0.10.0
-    - geopandas >=1.0.0
+    - geopandas >=0.14.4
     - dask >=2024.5.1
     - shapely >=2.0.0
 
