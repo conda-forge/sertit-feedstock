@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.42.2" %}
+{% set version = "1.42.3" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: 19bdf99c28308fbd8207da29dd6548bef5cfe40c4472ce62ff4ec0f4e49d0cf1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
+  sha256: 4cab36406f5d20a3aa256aac3b6f625c144b839ed7d665abf68714d7d23797b7
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - cloudpathlib >=0.12.1
     - dill
