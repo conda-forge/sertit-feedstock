@@ -18,9 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python 3.9
     - setuptools
   run:
+    - python >=3.9
     - cloudpathlib >=0.12.1
     - dill
     - lxml
@@ -42,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python 3.9
 
 about:
   home: http://github.com/sertit/sertit-utils
