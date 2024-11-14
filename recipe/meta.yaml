@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.42.3" %}
+{% set version = "1.43.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: 4cab36406f5d20a3aa256aac3b6f625c144b839ed7d665abf68714d7d23797b7
+  sha256: 8c4a4d1d3dc761a2563344eb0d548c517a30244d10842f560f785ce789f4248f
 
 build:
   number: 0
@@ -18,9 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python 3.9
     - setuptools
   run:
+    - python >=3.9
     - cloudpathlib >=0.12.1
     - dill
     - lxml
@@ -42,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python 3.9
 
 about:
   home: http://github.com/sertit/sertit-utils
