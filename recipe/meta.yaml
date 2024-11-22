@@ -26,7 +26,6 @@ requirements:
     - dill
     - lxml
     - psutil
-    - python >=3.9
     - tqdm
     - cloudpathlib-all >=0.12.1
     - rasterio >=1.3.10
