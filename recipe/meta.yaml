@@ -11,17 +11,17 @@ source:
   sha256: 537495c2bca817f78dcb77db2ebc639a367fc83ad52762653c2bb532290655cc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python 3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - cloudpathlib >=0.12.1
     - dill
     - lxml
@@ -47,7 +47,7 @@ test:
     - pip check
   requires:
     - pip
-    - python 3.9
+    - python {{ python_min }}
 
 about:
   home: http://github.com/sertit/sertit-utils
