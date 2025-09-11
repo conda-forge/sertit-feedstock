@@ -37,6 +37,7 @@ requirements:
     - shapely >=2.0.0
     - odc-geo >=0.4.6
     - xarray-spatial >=0.3.6
+    - xdem
     # https://github.com/coiled/benchmarks/issues/1616
     - cryptography >=43.0.3
     - pyopenssl >=24.2.1
