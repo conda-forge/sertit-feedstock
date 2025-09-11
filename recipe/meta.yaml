@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.46.4" %}
+{% set version = "1.47.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: bbf4b6ad90719c4512a2927faadef0f964fc9a30b7e16335283833e00218aea5
+  sha256: 9c3a668bdd21f1c788dbb826864c28570b6d5b67dfe15a69c49eb488da35ea5a
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
+    - semver
     - python >={{ python_min }}
     - cloudpathlib >=0.12.1
     - dill
@@ -36,6 +37,7 @@ requirements:
     - shapely >=2.0.0
     - odc-geo >=0.4.6
     - xarray-spatial >=0.3.6
+    - xdem
     # https://github.com/coiled/benchmarks/issues/1616
     - cryptography >=43.0.3
     - pyopenssl >=24.2.1
