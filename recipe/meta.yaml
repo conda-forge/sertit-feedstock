@@ -1,5 +1,5 @@
 {% set name = "sertit" %}
-{% set version = "1.49.0" %}
+{% set version = "1.50.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sertit-{{ version }}.tar.gz
-  sha256: 7c7ac9166592a7241c022f66df46b4a3688403cfead4895ea49b19296af1b461
+  sha256: be345b85da2ff071da117f6ea9e529fe3694538a5b885e1c8be291cbef40188f
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
   run:
     - semver
     - python >={{ python_min }}
-    - cloudpathlib >=0.12.1
+    - cloudpathlib >=0.15.0
     - dill
     - lxml
     - psutil
